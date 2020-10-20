@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Burger Shop</title>
+
+<!-- Meta -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Anita Haris">
+
+<!-- Bootstrap cdn-->
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+<!--Plugins jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!--W3school framework -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Stylesheet CSS -->
+<link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+
+	<header>
+
+		<div class="topnav" id="siteTopnav">
+				<a href="#" class="logo" style="color:orange; font-weight: bold;">Lemi's</a>
+				<a href="#OurStory">Our Story</a>
+				<a href="#menu">Menu</a>
+				<a href="#reservation">Reservation</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    				<i class="fa fa-bars"></i>
+ 				</a>
+		</div>
+
+	</header>
+
+		<div class="container-hero">
+			<img id="hero-img" src="background/burger.png" alt="salmon salad plate">
+				<div class="content">
+					The Burger Shop
+				</div>
+		</div>
+	
+		<main class="wrapper">
+				<div class="container" id="OurStory">
+					<div class="row mt-5">
+						<div class="col-lg-5">
+							<img id="image" src="images/food plate.png"  alt="Food plate">
+						</div>
+						<div class="col-lg">
+							<h1 class="text-center">Our Story</h1>
+							<h5 class="text-center">Serving community since 2002</h5>
+							<p>I'm a paragraph. Lorum lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<p>I am another paragraph and my content goes here. lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+				</div>
+
+			<hr>
+
+			<h1 class="text-center">Our specialty items</h1>
+
+			<div class="container" id="gallery">
+				
+					<div class="row">
+
+						<div class="col-sm-3">
+							<img class="menuImg" src="images/chicken sandwich.png" alt="Chicken sandwich">
+						</div>
+						<div class="col-sm-3">
+							<img class="menuImg" src="images/salmon.png" alt="Salmon salad plate">
+						</div>
+						<div class="col-sm-3">
+							<img class="menuImg" src="images/veggie sandwich.png" alt="Veggie sandwich">
+						</div>
+						<div class="col-sm-3">
+							<img class="menuImg" src="images/burger.png" alt="Hamburger">
+						</div>
+
+					</div> <!-- row gallery-->
+					
+					<div class="modal">
+						<span class="close">&times;</span>
+						<img class="modalImage" id="img01">
+					</div>
+			</div> <!-- container gallery-->
+
+			<hr>
+
+			<div class="container" id="menu">
+
+				<div class="row">
+
+					<div class="col-lg-6">
+						<h1 class="text-center">Menu</h1>
+						<h2>Starter</h2>
+							<div class="d-flex justify-content-between">
+								<p class="item">Chicken Fries</p> 
+								<span> $4.25</span>
+							</div>
+							<p class="text-muted item-description">Lorem ipsum dolor consectetur adipiscing elit</p>
+								
+							<div class="d-flex justify-content-between">
+								<p class="item">Curly Fries</p> 
+								<span> $2.65</span>
+							</div>
+							<p class="text-muted item-description">Lorem ipsum dolor consectetur adipiscing elit dolor</p>
+								
+							<h2>Main</h2>
+								<div class="d-flex justify-content-between">
+									<p class="item">Grilled Chicken Burger</p> 
+									<span> $3.25</span>
+								</div>
+								<p class="text-muted item-description">Lorem ipsum dolor consectetur adipiscing elit</p>
+									
+								<div class="d-flex justify-content-between">
+									<p class="item">Chef's burger</p> 
+									<span> $5.20</span>
+								</div>
+								<p class="text-muted item-description">Lorem ipsum dolor consectetur adipiscing elit dolor</p>
+								<div class="d-flex justify-content-between">
+									<p class="item">Salam Salad</p> 
+									<span> $10.20</span>
+								</div>
+								<p class="text-muted item-description">Lorem ipsum dolor consectetur adipiscing elit dolor</p>
+								<div class="d-flex justify-content-between">
+									<p class="item">Veggie Burger</p> 
+									<span> $2.75</span>
+								</div>
+								<p class="text-muted item-description">Lorem ipsum dolor consectetur adipiscing elit dolor</p>			
+									
+					</div> <!-- column menue -->
+
+					<div class="col-lg-6">
+						<img id="image" src="images/meal.png">
+					</div> <!-- column - menu picture -->
+
+					<hr>
+
+				</div> 
+			</div><!--main container-->
+
+			<div class="container" id="reservation">
+
+  				<h1 class="text-center">Reservation</h1>
+
+  				<p class="text-center"><em>We also offer full service catering for small and large groups.</em></p>
+
+  					<div class="row p-5">
+   						<div class="col-lg-4">
+      						<a href="https://www.google.com/maps/place/Main+St,+San+Diego,+CA/@32.692823,-117.132146,17z/data=!3m1!4b1!4m5!3m4!1s0x80d95308e9d83211:0xfb7cfcfa75fe019b!8m2!3d32.6928185!4d-117.1299573"><img id="image" src="images/restaurant.png"></a>
+    					</div>
+
+    					<div class="col-lg-8">
+     						<div class="mb-3">
+       							<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> San Diego, California<br>
+        						<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 619-000-0000<br>
+        						<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: lemiburger@abcd.com<br>
+      						</div>
+
+      						<p>Swing by for a glass of drink <i class="fa fa-glass"></i>, or leave us a note:</p>
+
+
+      						<form>
+
+        						<div class="row p-3">
+          							<div class="w3-half">
+            							<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          							</div>
+          							<div class="w3-half">
+            							<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          							</div>
+          							<div class="w3-half">
+          								<input class="w3-input w3-border" type="number" placeholder="Number of servings" required name="Servings">
+          							</div>
+          							<div class="w3-half">
+          								<input class="w3-input w3-border" type="datetime-local" placeholder="Date and time" required name="Date" value="2020-08-03:01">
+          							</div>
+        						</div>
+
+        						<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+
+        						<button type="submit" id="reserveTable" onclick="bookNow()">BOOK NOW</button>
+     						</form>
+
+    					</div> 
+
+  					</div> 
+			</div> <!-- container contact -->
+
+			<footer class="text-center bg-light p-2">
+  				<a href="#siteTopnav" class="btn-warning p-2">To the top</a>
+  				<div class="text-center social-icon p-5">
+    				<i class="fa fa-facebook-official"></i>
+    				<i class="fa fa-instagram "></i>
+    				<i class="fa fa-pinterest-p"></i>
+    				<i class="fa fa-twitter"></i>
+  				</div>
+			</footer>
+	
+	</main> <!-- wrapper -->
+
+	
+		
+<script>
+
+function myFunction() {
+  let links = document.getElementById("siteTopnav");
+  if (links.className === "topnav") {
+    links.className += " responsive";
+  } else {
+    links.className = "topnav";
+  }
+}
+
+
+let modal = document.querySelector(".modal");
+
+let modalImage = document.querySelector(".modalImage");
+
+Array.from(document.querySelectorAll(".menuImg")).forEach(item => {
+	item.addEventListener("click", event => {
+		modal.style.display = "block";
+		modalImage.src = event.target.src;
+	});
+});
+
+document.querySelector(".close").addEventListener("click", () => {
+	modal.style.display = "none";
+});
+
+
+function bookNow(){
+	let order = document.getElementById("reserveTable");
+
+	alert ("Thank you!")
+}
+</script>
+
+</body>
+</html>
